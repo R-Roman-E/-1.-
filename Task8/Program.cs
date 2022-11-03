@@ -1,0 +1,12 @@
+﻿// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+
+Console.WriteLine ("Введите число");
+string NumberI = Console.ReadLine ();
+int Number = int.Parse (NumberI);
+Console.WriteLine ($"Все четные числа от 1 до {Number}:");
+for (int i = 0; i <=Number; i=i+2)
+{
+        Console.WriteLine ($"{i}");
+}
